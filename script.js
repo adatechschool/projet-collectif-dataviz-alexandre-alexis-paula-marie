@@ -22,16 +22,4 @@ async function starInfo(starName) {
     console.log(infos);
     document.body.innerHTML += `<p>Nom: ${infos.name}</p>`;
     document.body.innerHTML += `<p>Rayon équatorial en kilomètres: ${infos.equaRadius} km</p>`;
-}
-
-function afficherPlus() {
-    if (article.className == "ouvert") {
-        // afficher moins
-        article.className ="";
-        bouton.innerHTML = "Afficher plus";
-    } else {
-        // afficher plus
-        article.className = "ouvert";
-        bouton.innerHTML = "Afficher moins";
-    }
-}
+} 
