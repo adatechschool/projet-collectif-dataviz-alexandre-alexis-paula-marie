@@ -23,3 +23,4 @@ async function starInfo(starName) {
     document.body.innerHTML += `<p>Nom: ${infos.name}</p>`;
     document.body.innerHTML += `<p>Rayon équatorial en kilomètres: ${infos.equaRadius} km</p>`;
 } 
+
