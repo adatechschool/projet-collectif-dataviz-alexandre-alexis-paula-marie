@@ -17,3 +17,137 @@ body {
     height: 700px;
     margin: 0 auto;
 }
+
+#sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+}
+
+#sun {
+    -webkit-animation: pulse 4s alternate infinite linear;
+    -moz-animation: pulse 4s alternate infinite linear;
+    -ms-animation: pulse 4s alternate infinite linear;
+    -o-animation: pulse 4s alternate infinite linear;
+    animation: pulse 4s alternate infinite linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+    100%  {
+        transform: scale(1);
+    }
+}
+@-moz-keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+    100%  {
+        transform: scale(1);
+    }
+}
+@-o-keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+    100%  {
+        transform: scale(1);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+    100%  {
+        transform: scale(1);
+    }
+}
+
+#earth-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+    width: 500px;
+    height: 500px;
+ 
+    margin-top: -250px;
+    margin-left: -250px;
+ 
+    border: 2px solid #939393;
+}
+
+#earth {
+    position: absolute;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+#moon-orbit {
+    width: 200px;
+    height: 200px;
+ 
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+#moon {
+    margin-left: 75px;
+    margin-top: -20px;
+}
+
+#earth-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes orbit {
+    100%  {
+        transform: rotate(360deg)
+    }
+}
+@-moz-keyframes orbit {
+    100%  {
+        transform: rotate(360deg)
+    }
+}
+@-o-keyframes orbit {
+    100%  {
+        transform: rotate(360deg)
+    }
+}
+@keyframes orbit {
+    100%  {
+        transform: rotate(360deg)
+    }
+}
+
+#earth {
+   -webkit-animation: orbit 30s linear infinite;
+   -moz-animation: orbit 30s linear infinite;
+   -ms-animation: orbit 30s linear infinite;
+   -o-animation: orbit 30s linear infinite;
+   animation: orbit 30s linear infinite;
+}
+#earth-orbit {
+   -webkit-animation: orbit 10s linear infinite;
+   -moz-animation: orbit 10s linear infinite;
+   -ms-animation: orbit 10s linear infinite;
+   -o-animation: orbit 10s linear infinite;
+   animation: orbit 10s linear infinite;
+}
+#moon-orbit {
+   -webkit-animation: orbit 10s linear infinite;
+   -moz-animation: orbit 10s linear infinite;
+   -ms-animation: orbit 10s linear infinite;
+   -o-animation: orbit 10s linear infinite;
+   animation: orbit 10s linear infinite;
+}
