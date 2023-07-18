@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: xx-large;
+}
+
+body {
+    background: black;
+}
+ 
+#scene {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
