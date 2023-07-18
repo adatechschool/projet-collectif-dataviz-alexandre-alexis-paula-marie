@@ -5,10 +5,10 @@ async function planetInfo(planetName) {
   // document.querySelector("#informations")
   var container = document.getElementById("informations");
   container.innerHTML = "";
-  container.innerHTML += `<p>Nom: ${infos.name}</p>`;
-  container.innerHTML += `<p>Période de révolution autour du soleil: ${infos.sideralOrbit} jours</p>`;
-  container.innerHTML += `<p>Période de rotation sur son axe: ${infos.sideralRotation} heures</p>`;
-  container.innerHTML += `<p>Rayon équatorial en kilomètres: ${infos.equaRadius} km</p>`;
+  container.innerHTML += `<p>${infos.name}</p>`;
+  container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
+  container.innerHTML += `<p>Journée: ${infos.sideralRotation} heures</p>`;
+  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
 }
 
 async function moonInfo(moonName) {
@@ -17,8 +17,8 @@ async function moonInfo(moonName) {
   var container = document.getElementById("informations");
   container.innerHTML = "";
   // console.log(infos);
-  container.innerHTML += `<p>Nom: ${infos.name}</p>`;
-  container.innerHTML += `<p>Rayon équatorial en kilomètres: ${infos.equaRadius} km</p>`;
+  container.innerHTML += `<p>${infos.name}</p>`;
+  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
 }
 
 async function starInfo(starName) {
@@ -27,6 +27,6 @@ async function starInfo(starName) {
   var container = document.getElementById("informations");
   container.innerHTML = "";
   // console.log(infos);
-  container.innerHTML += `<p>Nom: ${infos.name}</p>`;
-  container.innerHTML += `<p>Rayon équatorial en kilomètres: ${infos.equaRadius} km</p>`;
+  container.innerHTML += `<p>${infos.name}</p>`;
+  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
 }

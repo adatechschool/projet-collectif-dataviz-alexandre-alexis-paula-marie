@@ -1,5 +1,16 @@
 h1 {
     text-align: center;
+    font-family: 'Montserrat', arial;
+    color: white;
+    font-size: 50px;
+    margin-left: 95px;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
 }
 
 p {
@@ -31,8 +42,8 @@ body {
 
 #sun {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 57%;
+    left: 56%;
     margin-top: -80px;
     margin-left: -80px;
 }
@@ -80,11 +91,11 @@ body {
 
 #earth-orbit {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 60%;
 
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
 
     margin-top: -230px;
     margin-left: -230px;
@@ -99,26 +110,13 @@ body {
     margin-top: -25px;
 }
 
-#mercury-orbit {
-    position: absolute;
-    top: 50%;
-    left:50%;
-
-    width: 370px;
-    height: 370px;
-
-    margin-top: -140px;
-    margin-left: -140px;
+/* Arrondie l'orbite */
+#earth-orbit {
     border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
 }
-
-#mercury {
-    position: absolute;
-    margin-left: -15px;
-    top: 50%;
-    margin-top: -15px;
-}
-
 
 #moon-orbit {
     width: 110px;
@@ -135,7 +133,28 @@ body {
     margin-top: -35px;
 }
 
-#earth-orbit {
+#venus-orbit {
+    position: absolute;
+    top: 70%;
+    left: 69%;
+
+    width: 270px;
+    height: 270px;
+
+    margin-top: -230px;
+    margin-left: -230px;
+
+    border: 2px solid #939393;
+}
+
+#venus {
+    position: absolute;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+#venus-orbit {
     border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
@@ -143,6 +162,53 @@ body {
 }
 
 #mercury-orbit {
+    position: absolute;
+    top: 62%; /* placement de l'orbite */
+    left: 61%;
+
+    width: 200px; /* taille cercle */
+    height: 200px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#mercury {
+    position: absolute;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#mercury-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
+#mars-orbit {
+    position: absolute;
+    top: 36%; /* placement de l'orbite */
+    left: 37%;
+
+    width: 550px; /* taille cercle */
+    height: 550px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#mars {
+    position: absolute;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#mars-orbit {
     border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
@@ -192,9 +258,23 @@ body {
    animation: orbit 10s linear infinite;
 }
 #mercury-orbit{
-    -webkit-animation: orbit 10s linear infinite;
-    -moz-animation: orbit 10s linear infinite;
-    -ms-animation: orbit 10s linear infinite;
-    -o-animation: orbit 10s linear infinite;
-    animation: orbit 10s linear infinite;
+    -webkit-animation: orbit 4s linear infinite;
+    -moz-animation: orbit 4s linear infinite;
+    -ms-animation: orbit 4s linear infinite;
+    -o-animation: orbit 4s linear infinite;
+    animation: orbit 4s linear infinite;
+}
+#venus-orbit{
+    -webkit-animation: orbit 6s linear infinite;
+    -moz-animation: orbit 6s linear infinite;
+    -ms-animation: orbit 6s linear infinite;
+    -o-animation: orbit 6s linear infinite;
+    animation: orbit 6s linear infinite;
+}
+#mars-orbit{
+    -webkit-animation: orbit 12s linear infinite;
+    -moz-animation: orbit 12s linear infinite;
+    -ms-animation: orbit 12s linear infinite;
+    -o-animation: orbit 12s linear infinite;
+    animation: orbit 12s linear infinite;
 }
