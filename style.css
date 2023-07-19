@@ -215,6 +215,79 @@ body {
     border-radius: 50%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#uranus-orbit {
+    position: absolute;
+    top: 6%; /* placement de l'orbite */
+    left: 6%;
+
+    width: 980px; /* taille cercle */
+    height: 980px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#uranus {
+    position: absolute;
+    margin-left: -32px; /* placement sur l'orbite */ 
+    top: 50%;
+    margin-top: -15px;
+}
+
+#uranus-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
+#neptune-orbit {
+    position: absolute;
+    top: -10%; /* placement de l'orbite */
+    left: -10%;
+
+    width: 1200px; /* taille cercle */
+    height: 1200px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#neptune {
+    position: absolute;
+    margin-left: -34px; /* placement sur l'orbite */ 
+    top: 50%;
+    margin-top: -15px;
+}
+
+#neptune-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
 @-webkit-keyframes orbit {
     100%  {
         transform: rotate(360deg)
@@ -277,4 +350,25 @@ body {
     -ms-animation: orbit 12s linear infinite;
     -o-animation: orbit 12s linear infinite;
     animation: orbit 12s linear infinite;
+}
+
+
+
+
+
+
+#uranus-orbit{
+    -webkit-animation: orbit 24s linear infinite;
+    -moz-animation: orbit 24s linear infinite;
+    -ms-animation: orbit 24s linear infinite;
+    -o-animation: orbit 24s linear infinite;
+    animation: orbit 24s linear infinite;
+}
+
+#neptune-orbit{
+    -webkit-animation: orbit 26s linear infinite;
+    -moz-animation: orbit 26s linear infinite;
+    -ms-animation: orbit 26s linear infinite;
+    -o-animation: orbit 26s linear infinite;
+    animation: orbit 26s linear infinite;
 }
