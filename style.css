@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     font-family: 'Montserrat', arial;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     margin-left: 95px;
     text-shadow:
     0 0 6px rgba(202,228,225,0.92),
@@ -38,7 +38,7 @@ body {
     width: 700px;
     height: 700px;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 #sun {
@@ -246,7 +246,7 @@ body {
 #saturn-orbit {
     position: absolute;
     top: 7%; /* placement de l'orbite */
-    left: 9%;
+    left: 10%;
 
     width: 950px; /* taille cercle */
     height: 950px;
@@ -264,6 +264,50 @@ body {
 }
 
 #saturn-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+#uranus-orbit {
+    position: absolute;
+    top: -3%; /* placement de l'orbite */
+    left: 0%;
+    width: 1100px; /* taille cercle */
+    height: 1100px;
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+#uranus {
+    position: absolute;
+    margin-left: -32px; /* placement sur l'orbite */
+    top: 50%;
+    margin-top: -15px;
+}
+#uranus-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+#neptune-orbit {
+    position: absolute;
+    top: -16%; /* placement de l'orbite */
+    left: -14%;
+    width: 1300px; /* taille cercle */
+    height: 1300px;
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+#neptune {
+    position: absolute;
+    margin-left: -34px; /* placement sur l'orbite */
+    top: 50%;
+    margin-top: -15px;
+}
+#neptune-orbit {
     border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
@@ -347,4 +391,18 @@ body {
     -ms-animation: orbit 20s linear infinite;
     -o-animation: orbit 20s linear infinite;
     animation: orbit 20s linear infinite;
+}
+#uranus-orbit{
+    -webkit-animation: orbit 24s linear infinite;
+    -moz-animation: orbit 24s linear infinite;
+    -ms-animation: orbit 24s linear infinite;
+    -o-animation: orbit 24s linear infinite;
+    animation: orbit 24s linear infinite;
+}
+#neptune-orbit{
+    -webkit-animation: orbit 26s linear infinite;
+    -moz-animation: orbit 26s linear infinite;
+    -ms-animation: orbit 26s linear infinite;
+    -o-animation: orbit 26s linear infinite;
+    animation: orbit 26s linear infinite;
 }
