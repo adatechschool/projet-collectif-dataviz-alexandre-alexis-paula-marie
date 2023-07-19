@@ -9,8 +9,8 @@ async function planetInfo(planetName) {
     var container = document.getElementById("informations");
     container.innerHTML = "";
     container.innerHTML += `<p>${infos.name}</p>`;
-    container.innerHTML += `<p>Jour: ${infos.sideralOrbit} jours</p>`;
-    container.innerHTML += `<p>Année: ${infos.sideralRotation} heures</p>`;
+    container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
+    container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher = true
   } else if(texteAfficher) {
