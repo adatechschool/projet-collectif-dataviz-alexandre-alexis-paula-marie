@@ -1,10 +1,12 @@
 var texteAfficher = false
+var texteAfficher2 = false
+var texteAfficher3 = false
 
 async function planetInfo(planetName) {
+  const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
+  const infos = await response.json();
   if (texteAfficher == false) {
-    const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
-    const infos = await response.json();
-    console.log(infos);
+      console.log(infos);
     // document.querySelector("#informations")
     var container = document.getElementById("informations");
     container.innerHTML = "";
@@ -22,7 +24,7 @@ async function planetInfo(planetName) {
 }
 
 async function moonInfo(moonName) {
-  if (texteAfficher == false) {
+  if (texteAfficher3 == false) {
     const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
     const infos = await response.json();
     var container = document.getElementById("informations");
@@ -30,16 +32,16 @@ async function moonInfo(moonName) {
     // console.log(infos);
     container.innerHTML += `<p>${infos.name}</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
-    texteAfficher = true
-  } else if (texteAfficher) {
-    texteAfficher = false;
+    texteAfficher3 = true
+  } else if (texteAfficher3) {
+    texteAfficher3 = false;
     var container = document.getElementById("informations");
     container.innerHTML = "";
   }
 }
 
 async function starInfo(starName) {
-  if (texteAfficher == false) {
+  if (texteAfficher2 == false) {
     const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${starName}`);
     const infos = await response.json();
     var container = document.getElementById("informations");
@@ -47,9 +49,9 @@ async function starInfo(starName) {
     // console.log(infos);
     container.innerHTML += `<p>${infos.name}</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
-    texteAfficher = true;
-  } else if(texteAfficher) {
-    texteAfficher = false;
+    texteAfficher2 = true;
+  } else if(texteAfficher2) {
+    texteAfficher2 = false;
     var container = document.getElementById("informations");
     container.innerHTML = "";
   }

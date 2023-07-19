@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Solar system</title>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>- A la découverte du système solaire -</h1>
@@ -28,12 +28,21 @@
         </div>
         <script src="script.js"></script>
 
-        <button type="button" onclick="starInfo('Soleil')" id="button1">Soleil</button><br>
-        <button type="button" onclick="planetInfo('Terre')" id="button2">La Terre</button><br>
-        <button type="button" onclick="moonInfo('Lune')" id="button3">La Lune</button><br>
-        <button type="button" onclick="planetInfo('Mercure')" id="button4">Mercure</button><br>
+        <div id ="boutons">
+          <button type="button" onclick="starInfo('Soleil')">Soleil</button><br>
+          <button type="button" onclick="planetInfo('Terre')">La Terre</button><br>
+          <button type="button" onclick="moonInfo('Lune')">La Lune</button><br>
+          <button type="button" onclick="planetInfo('Mercure')">Mercure</button><br>
+          <button type="button" onclick="planetInfo('Neptune')">Neptune</button><br>
+          <button type="button" onclick="planetInfo('Jupiter')">Jupiter</button><br>
+          <button type="button" onclick="planetInfo('Venus')">Venus</button><br>
+          <button type="button" onclick="planetInfo('Saturne')">Saturne</button><br>
+          <button typr="button" onclick="planteInfo('Mars')">Mars</button><br>
+          <button type="button" onclick="planetInfo('Uranus')">Uranus</button><br>
+        </div>
 
         <img src="images/space.jpg" id="space" alt="space">
+        
         <div id ="informations"></div>
     </body>
 </html>
