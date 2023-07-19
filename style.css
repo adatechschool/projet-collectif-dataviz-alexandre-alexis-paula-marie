@@ -28,7 +28,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     z-index: -1;
     opacity: 0.4;
 }
@@ -38,6 +38,7 @@ body {
     width: 700px;
     height: 700px;
     margin: 0 auto;
+    margin-top: 300px;
 }
 
 #sun {
@@ -203,7 +204,7 @@ body {
 
 #mars {
     position: absolute;
-    margin-left: -15px;
+    margin-left: -26px;
     top: 50%;
     margin-top: -15px;
 }
@@ -214,6 +215,61 @@ body {
     -webkitborder-radius: 50%;
     border-radius: 50%;
 }
+
+#jupiter-orbit {
+    position: absolute;
+    top: 25%; /* placement de l'orbite */
+    left: 26%;
+
+    width: 700px; /* taille cercle */
+    height: 700px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#jupiter {
+    position: absolute;
+    margin-left: -75px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#jupiter-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
+#saturn-orbit {
+    position: absolute;
+    top: 7%; /* placement de l'orbite */
+    left: 9%;
+
+    width: 950px; /* taille cercle */
+    height: 950px;
+
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+
+#saturn {
+    position: absolute;
+    margin-left: -105px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#saturn-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
+
 
 @-webkit-keyframes orbit {
     100%  {
@@ -277,4 +333,18 @@ body {
     -ms-animation: orbit 12s linear infinite;
     -o-animation: orbit 12s linear infinite;
     animation: orbit 12s linear infinite;
+}
+#jupiter-orbit{
+    -webkit-animation: orbit 18s linear infinite;
+    -moz-animation: orbit 18s linear infinite;
+    -ms-animation: orbit 18s linear infinite;
+    -o-animation: orbit 18s linear infinite;
+    animation: orbit 18s linear infinite;
+}
+#saturn-orbit{
+    -webkit-animation: orbit 20s linear infinite;
+    -moz-animation: orbit 20s linear infinite;
+    -ms-animation: orbit 20s linear infinite;
+    -o-animation: orbit 20s linear infinite;
+    animation: orbit 20s linear infinite;
 }
