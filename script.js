@@ -56,3 +56,12 @@ async function starInfo(starName) {
     container.innerHTML = "";
   }
 }
+
+// FONCTION CONCERNANT L'ISS ------------------
+async function issInfo() {
+  const response = await fetch("http://api.open-notify.org/iss-now.json");
+  const infos = await response.json();
+  console.log(infos)
+}
+issInfo()
+
