@@ -16,7 +16,7 @@ async function planetInfo(planetName) {
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher = true
   } else if(texteAfficher) {
-    texteAfficher = false
+    texteAfficher = false;
     var container = document.getElementById("informations");
     container.innerHTML = "";
   }

@@ -16,7 +16,7 @@
                 <img src="images/terre1.png" id="earth" alt="earth" title="La Terre">
             </div>
             <div id="mercury-orbit">
-                <img src="images/mercure.png" id="mercury" alt="Mercure">
+                <img src="images/mercure.png" id="mercury" alt="Mercure" title="Mercure">
             </div>
             <div id="venus-orbit">
                 <img src="images/venus.png" id="venus" alt="Venus" title="Venus">
@@ -36,25 +36,37 @@
             <div id="saturn-orbit">
                 <img src="images/saturn.png" id="saturn" alt="Saturne" title="Saturne">
             </div>
+<<<<<<< HEAD
             <img src="images/soleil1.png"  id="mercury" alt="sun" title="Soleil">
+=======
+            <div id="terre-iss">
+                <div id="iss-orbit">
+                    <img src="images/iss.png" id="iss" alt="ISS" title="ISS">
+                </div>
+                <img src="images/terre_iss.png" id="terre" alt="Terre" title="Terre"> 
+            </div>
+            <img src="images/soleil1.png"  id="sun" alt="sun" title="Soleil">
+>>>>>>> 268aa29dcca65de039aa4b6b5b03349d5c7325f7
         </div>
         <script src="script.js"></script>
-
+        <div id="info-iss">
+            <p>La Station Spatiale Internationale fait <br> 16x le tour de la Terre en 24h (8km/s)</p>
+        </div>
         <div id ="boutons">
-          <button class="sun" type="button" onclick="starInfo('Soleil')"><img src="images/sunButton.png" id="sunClick" alt="sunButton" title="Soleil"></button><br>
-          <button class="mercury" type="button" onclick="planetInfo('Mercure')"><img src="images/mercuryButton.png" id="mercuryClick" alt="mercuryButton" title="Mercure"></button><br>
-          <button class="venus" type="button" onclick="planetInfo('Venus')"><img src="images/venusButton.png" id="venusClick" alt="venusButton" title="Vénus"></button><br>
-          <button class="earth" type="button" onclick="planetInfo('Terre')"><img src="images/earthButton.png" id="earthClick" alt="earthButton" title="Terre"></button><br>
-          <button class="moon" type="button" onclick="moonInfo('Lune')"><img src="images/moonButton.png" id="moonClick" alt="moonButton" title="Lune"></button><br>
-          <button class="mars" type="button" onclick="planteInfo('Mars')"><img src="images/marsButton.png" id="marsClick" alt="marsButton" title="Mars"></button><br>
-          <button class="jupiter" type="button" onclick="planetInfo('Jupiter')"><img src="images/jupiterButton.png" id="jupiterClick" alt="jupiterButton" title="Jupiter"></button><br>
-          <button class="saturn" type="button" onclick="planetInfo('Saturne')"><img src="images/saturnButton.png" id="saturnClick" alt="saturnButton" title="Saturne"></button><br>
-          <button class="uranus" type="button" onclick="planetInfo('Uranus')"><img src="images/uranusButton.png" id="uranusClick" alt="uranusButton" title="uranuse"></button><br>
-          <button class="neptune" type="button" onclick="planetInfo('Neptune')"><img src="images/neptuneButton.png" id="neptuneClick" alt="neptuneButton" title="neptunee"></button><br>
+          <button class="sun" type="button" onclick="starInfo('Soleil')" id="butSun"><img src="images/sunButton.png" id="sunClick" alt="sunButton" title="Soleil"></button><br>
+          <button class="mercury" type="button" onclick="planetInfo('Mercure')" id="butMercure"><img src="images/mercuryButton.png" id="mercuryClick" alt="mercuryButton" title="Mercure"></button><br>
+          <button class="venus" type="button" onclick="planetInfo('Venus')" id="butVenus"><img src="images/venusButton.png" id="venusClick" alt="venusButton" title="Vénus"></button><br>
+          <button class="earth" type="button" onclick="planetInfo('Terre')" id="butTerre"><img src="images/earthButton.png" id="earthClick" alt="earthButton" title="Terre"></button><br>
+          <button class="moon" type="button" onclick="moonInfo('Lune')" id="butLune"><img src="images/moonButton.png" id="moonClick" alt="moonButton" title="Lune"></button><br>
+          <button class="mars" type="button" onclick="planteInfo('Mars')" id="butMars"><img src="images/marsButton.png" id="marsClick" alt="marsButton" title="Mars"></button><br>
+          <button class="jupiter" type="button" onclick="planetInfo('Jupiter')" id="butJupiter"><img src="images/jupiterButton.png" id="jupiterClick" alt="jupiterButton" title="Jupiter"></button><br>
+          <button class="saturn" type="button" onclick="planetInfo('Saturne')" id="butSaturne"><img src="images/saturnButton.png" id="saturnClick" alt="saturnButton" title="Saturne"></button><br>
+          <button class="uranus" type="button" onclick="planetInfo('Uranus')" id="butUranus"><img src="images/uranusButton.png" id="uranusClick" alt="uranusButton" title="uranuse"></button><br>
+          <button class="neptune" type="button" onclick="planetInfo('Neptune')" id="butNeptune"><img src="images/neptuneButton.png" id="neptuneClick" alt="neptuneButton" title="neptune"></button><br>
         </div>
 
         <img src="images/space.jpg" id="space" alt="space">
-        
+
         <div id ="informations"></div>
     </body>
 </html>
