@@ -20,13 +20,18 @@ p {
 }
 
 #informations {
-    margin-top: -18%;
+    margin-top: -20%;
     margin-left: 10%;
 }
 
 #info-iss {
     margin-top: -15%;
-    margin-left: 75%;
+    margin-left: 78%;
+}
+
+#position-iss {
+    margin-top: 2%;
+    margin-left: 78%;
 }
 
 body {
@@ -55,36 +60,45 @@ body {
 
 #boutons {
     position: relative;
-    margin-top: -11%;
+    margin-top: -15%;
     zoom: 120%;
 }
 #butSun {
     border: none;
 }
+
 #butMercure {
     border: none;
 }
+
 #butVenus {
     border: none;
 }
+
 #butTerre {
     border: none;
 }
+
 #butLune {
     border: none;
 }
+
 #butMars {
     border: none;
 }
+
 #butJupiter {
     border: none;
 }
+
 #butSaturne {
     border: none;
 }
+
 #butUranus {
     border: none;
 }
+
 #butNeptune {
     border: none;
 }

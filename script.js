@@ -1,6 +1,6 @@
-var texteAfficher = false
-var texteAfficher2 = false
-var texteAfficher3 = false
+let texteAfficher = false
+let texteAfficher2 = false
+let texteAfficher3 = false
 
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
@@ -8,7 +8,7 @@ async function planetInfo(planetName) {
   if (texteAfficher == false) {
       console.log(infos);
     // document.querySelector("#informations")
-    var container = document.getElementById("informations");
+    let container = document.getElementById("informations");
     container.innerHTML = "";
     container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
     container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
@@ -25,7 +25,7 @@ async function planetInfo(planetName) {
       // Ajouter un gestionnaire d'événements "click" à chaque option
       option.addEventListener("click", function() {
         const selectedOption = option.value; // Valeur de l'option sélectionnée
-        var container = document.getElementById("informations");
+        let container = document.getElementById("informations");
         container.innerHTML = "";
         // Faire quelque chose avec l'option sélectionnée
         // console.log("Option sélectionnée :", selectedOption);
@@ -44,7 +44,7 @@ async function moonInfo(moonName) {
   if (texteAfficher3 == false) {
     const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
     const infos = await response.json();
-    var container = document.getElementById("informations");
+    let container = document.getElementById("informations");
     container.innerHTML = "";
     // console.log(infos);
     container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
@@ -52,7 +52,7 @@ async function moonInfo(moonName) {
     texteAfficher3 = true
   } else if (texteAfficher3) {
     texteAfficher3 = false;
-    var container = document.getElementById("informations");
+    let container = document.getElementById("informations");
     container.innerHTML = "";
   }
 }
@@ -61,7 +61,7 @@ async function starInfo(starName) {
   if (texteAfficher2 == false) {
     const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${starName}`);
     const infos = await response.json();
-    var container = document.getElementById("informations");
+    let container = document.getElementById("informations");
     container.innerHTML = "";
     // console.log(infos);
     container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
@@ -69,27 +69,22 @@ async function starInfo(starName) {
     texteAfficher2 = true;
   } else if(texteAfficher2) {
     texteAfficher2 = false;
-    var container = document.getElementById("informations");
+    let container = document.getElementById("informations");
     container.innerHTML = "";
   }
 }
 
 // FONCTION CONCERNANT L'ISS ------------------
-async function issInfo() {
-  const response = await fetch("http://api.open-notify.org/iss-now.json");
-  const infos = await response.json();
-  console.log(infos)
-}
-issInfo()
-
-
 const position = async function issInfo() {
   const response = await fetch("http://api.open-notify.org/iss-now.json");
   const infos = await response.json();
+  // console.log(infos)
   const positionIss = infos.iss_position
+  // console.log(positionIss)
   const latitude = positionIss.latitude
   const longitude = positionIss.longitude
-  var marker = L.marker([latitude, longitude]).addTo(map);
+  let marker = L.marker([latitude, longitude]).addTo(map);
   console.log(marker)
 }
 position();
+
