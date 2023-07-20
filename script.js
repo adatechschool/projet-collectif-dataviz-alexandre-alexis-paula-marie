@@ -10,7 +10,7 @@ async function planetInfo(planetName) {
     // document.querySelector("#informations")
     var container = document.getElementById("informations");
     container.innerHTML = "";
-    container.innerHTML += `<p>${infos.name}</p>`;
+    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
     container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
     container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
@@ -47,7 +47,7 @@ async function moonInfo(moonName) {
     var container = document.getElementById("informations");
     container.innerHTML = "";
     // console.log(infos);
-    container.innerHTML += `<p>${infos.name}</p>`;
+    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher3 = true
   } else if (texteAfficher3) {
@@ -64,7 +64,7 @@ async function starInfo(starName) {
     var container = document.getElementById("informations");
     container.innerHTML = "";
     // console.log(infos);
-    container.innerHTML += `<p>${infos.name}</p>`;
+    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher2 = true;
   } else if(texteAfficher2) {
@@ -73,3 +73,12 @@ async function starInfo(starName) {
     container.innerHTML = "";
   }
 }
+
+// FONCTION CONCERNANT L'ISS ------------------
+async function issInfo() {
+  const response = await fetch("http://api.open-notify.org/iss-now.json");
+  const infos = await response.json();
+  console.log(infos)
+}
+issInfo()
+
