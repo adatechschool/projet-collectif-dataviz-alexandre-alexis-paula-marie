@@ -16,7 +16,7 @@
                 <img src="images/terre1.png" id="earth" alt="earth" title="La Terre">
             </div>
             <div id="mercury-orbit">
-                <img src="images/mercure.png" id="mercury" alt="Mercure">
+                <img src="images/mercure.png" id="mercury" alt="Mercure" title="Mercure">
             </div>
             <div id="venus-orbit">
                 <img src="images/venus.png" id="venus" alt="Venus" title="Venus">
@@ -36,10 +36,18 @@
             <div id="saturn-orbit">
                 <img src="images/saturn.png" id="saturn" alt="Saturne" title="Saturne">
             </div>
+            <div id="terre-iss">
+                <div id="iss-orbit">
+                    <img src="images/iss.png" id="iss" alt="ISS" title="ISS">
+                </div>
+                <img src="images/terre_iss.png" id="terre" alt="Terre" title="Terre"> 
+            </div>
             <img src="images/soleil1.png"  id="sun" alt="sun" title="Soleil">
         </div>
         <script src="script.js"></script>
-
+        <div id="info-iss">
+            <p>La Station Spatiale Internationale fait <br> 16x le tour de la Terre en 24h (8km/s)</p>
+        </div>
         <div id ="boutons">
           <button type="button" onclick="starInfo('Soleil')">Soleil</button><br>
           <button type="button" onclick="planetInfo('Terre')">La Terre</button><br>

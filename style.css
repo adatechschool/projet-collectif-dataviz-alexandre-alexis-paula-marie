@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    font-family: 'Montserrat', arial;
+    font-family: 'Montserrat', arial, sans-serif;
     color: white;
     font-size: 70px;
     margin-left: 95px;
@@ -16,10 +16,17 @@ h1 {
 p {
     color: white;
     font-size: xx-large;
+    font-family: 'Montserrat', arial, sans-serif;
+}
+
+#info-iss {
+    margin-top: -15%;
+    margin-left: 78%;
 }
 
 body {
     background-color: black;
+    zoom: 50%;
 
 }
 
@@ -39,6 +46,11 @@ body {
     height: 700px;
     margin: 0 auto;
     margin-top: 400px;
+}
+
+#boutons {
+    position: relative;
+    margin-top: 600px;
 }
 
 #sun {
@@ -313,6 +325,33 @@ body {
     -webkitborder-radius: 50%;
     border-radius: 50%;
 }
+#terre { /* Terre avec l'ISS */
+    position: absolute;
+    margin-left: 190%;
+    margin-top: -30%;
+}
+#iss-orbit {
+    position: absolute;
+    top: -32%; /* placement de l'orbite */
+    left: 189%;
+    width: 600px; /* taille cercle */
+    height: 600px;
+    margin-top: -140px;
+    margin-left: -140px;
+    border: 2px solid #939393;
+}
+#iss {
+    position: absolute;
+    margin-left: -80px; /* placement sur l'orbite */
+    top: 50%;
+    margin-top: -15px;
+}
+#iss-orbit {
+    border: 2px solid #939393;
+    -mozborder-radius: 50%;
+    -webkitborder-radius: 50%;
+    border-radius: 50%;
+}
 
 
 @-webkit-keyframes orbit {
@@ -406,3 +445,11 @@ body {
     -o-animation: orbit 26s linear infinite;
     animation: orbit 26s linear infinite;
 }
+#iss-orbit{
+    -webkit-animation: orbit 40s linear infinite;
+    -moz-animation: orbit 40s linear infinite;
+    -ms-animation: orbit 40s linear infinite;
+    -o-animation: orbit 40s linear infinite;
+    animation: orbit 40s linear infinite;
+}
+
