@@ -17,11 +17,28 @@ async function planetInfo(planetName) {
     texteAfficher = true
   } else if(texteAfficher) {
     texteAfficher = false;
-    var container = document.getElementById("informations");
-    container.innerHTML = "";
+    const dropdownButton = document.getElementById("dropdownButton");
+    const options = dropdownButton.getElementsByTagName("option");
+
+    // Utiliser forEach pour itérer sur les options
+    Array.from(options).forEach(function(option) {
+      // Ajouter un gestionnaire d'événements "click" à chaque option
+      option.addEventListener("click", function() {
+        const selectedOption = option.value; // Valeur de l'option sélectionnée
+        var container = document.getElementById("informations");
+        container.innerHTML = "";
+        // Faire quelque chose avec l'option sélectionnée
+        // console.log("Option sélectionnée :", selectedOption);
+      });
+    });
   }
   // console.log(texteAfficher)
 }
+
+// vérifier dans le else if si on appui sur le même bouton
+// si on appuie sur le même, alors on ne supprime pas/on ne ferme pas ke bouton
+// sinon on supprime les infos/ferme le bouton
+
 
 async function moonInfo(moonName) {
   if (texteAfficher3 == false) {
