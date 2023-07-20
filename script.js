@@ -82,3 +82,14 @@ async function issInfo() {
 }
 issInfo()
 
+
+const position = async function issInfo() {
+  const response = await fetch("http://api.open-notify.org/iss-now.json");
+  const infos = await response.json();
+  const positionIss = infos.iss_position
+  const latitude = positionIss.latitude
+  const longitude = positionIss.longitude
+  var marker = L.marker([latitude, longitude]).addTo(map);
+  console.log(marker)
+}
+position();
