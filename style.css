@@ -19,6 +19,11 @@ p {
     font-family: 'Montserrat', arial, sans-serif;
 }
 
+#informations {
+    margin-top: -18%;
+    margin-left: 10%;
+}
+
 #info-iss {
     margin-top: -15%;
     margin-left: 78%;
@@ -45,12 +50,43 @@ body {
     width: 700px;
     height: 700px;
     margin: 0 auto;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 #boutons {
     position: relative;
-    margin-top: 600px;
+    margin-top: -11%;
+    zoom: 120%;
+}
+#butSun {
+    border: none;
+}
+#butMercure {
+    border: none;
+}
+#butVenus {
+    border: none;
+}
+#butTerre {
+    border: none;
+}
+#butLune {
+    border: none;
+}
+#butMars {
+    border: none;
+}
+#butJupiter {
+    border: none;
+}
+#butSaturne {
+    border: none;
+}
+#butUranus {
+    border: none;
+}
+#butNeptune {
+    border: none;
 }
 
 #sun {
