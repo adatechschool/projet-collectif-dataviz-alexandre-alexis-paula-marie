@@ -529,3 +529,19 @@ body {
     animation: orbit 40s linear infinite;
 }
 
+
+.accordion-header {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+/* Styles facultatifs pour le rendu visuel de l'accordéon */
+.accordion-item {
+  margin-bottom: 10px;
+}

@@ -2,35 +2,49 @@ var texteAfficher = false
 var texteAfficher2 = false
 var texteAfficher3 = false
 
+// function toggleAccordion(sectionNumber) {
+//   var content = document.querySelector("boutons");
+//   if (content.style.display === "block") {
+//     content.style.display = "none";
+//   } else {
+//     content.style.display = "block";
+//   }
+// }
+
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
   const infos = await response.json();
-  if (texteAfficher == false) {
-      console.log(infos);
-    // document.querySelector("#informations")
+  if (texteAfficher == false){
+
+    document.querySelector("#informations")
     var container = document.getElementById("informations");
     container.innerHTML = "";
-    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
+    var name = container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
+    document.getElementsByClassName("")
     container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
     container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher = true
   } else if(texteAfficher) {
-    texteAfficher = false;
-    const dropdownButton = document.getElementById("dropdownButton");
-    const options = dropdownButton.getElementsByTagName("option");
+      if(texteAfficher = false){
+        const dropdownButton = document.getElementById("dropdownButton");
+        const options = dropdownButton.getElementsByTagName("option");
 
-    // Utiliser forEach pour itérer sur les options
-    Array.from(options).forEach(function(option) {
-      // Ajouter un gestionnaire d'événements "click" à chaque option
-      option.addEventListener("click", function() {
+        // Utiliser forEach pour itérer sur les options
+        Array.from(options).forEach(function(option) {
+          // Ajouter un gestionnaire d'événements "click" à chaque option
+        option.addEventListener("click", function() {
         const selectedOption = option.value; // Valeur de l'option sélectionnée
-        var container = document.getElementById("informations");
+             var container = document.getElementById("informations");
+             container.innerHTML = "";
+            //  Faire quelque chose avec l'option sélectionnée
+            //  console.log("Option sélectionnée :", selectedOption);
+           });
+         });
+       } else {
+        document.getElementById("informations");
         container.innerHTML = "";
-        // Faire quelque chose avec l'option sélectionnée
-        // console.log("Option sélectionnée :", selectedOption);
-      });
-    });
+      }
   }
   // console.log(texteAfficher)
 }
@@ -81,4 +95,3 @@ async function issInfo() {
   console.log(infos)
 }
 issInfo()
-
