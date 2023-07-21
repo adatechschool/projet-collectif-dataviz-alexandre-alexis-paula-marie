@@ -60,47 +60,13 @@ body {
 
 #boutons {
     position: relative;
-    margin-top: -15%;
+    margin-top: -20%;
     zoom: 120%;
 }
-#butSun {
-    border: none;
-}
 
-#butMercure {
+#boutons button {
     border: none;
-}
-
-#butVenus {
-    border: none;
-}
-
-#butTerre {
-    border: none;
-}
-
-#butLune {
-    border: none;
-}
-
-#butMars {
-    border: none;
-}
-
-#butJupiter {
-    border: none;
-}
-
-#butSaturne {
-    border: none;
-}
-
-#butUranus {
-    border: none;
-}
-
-#butNeptune {
-    border: none;
+    background-color: inherit;
 }
 
 #sun {
@@ -495,51 +461,3 @@ body {
     -o-animation: orbit 26s linear infinite;
     animation: orbit 26s linear infinite;
 }
-
-.sun{
-    background-color: inherit;
-}
-
-.mercury{
-    background-color: inherit;
-}
-
-.venus{
-    background-color: inherit;
-}
-
-.earth{
-    background-color: inherit;
-}
-
-.moon{
-    background-color: inherit;
-}
-
-.mars{
-    background-color: inherit;
-}
-
-.jupiter{
-    background-color: inherit;
-}
-
-.saturn{
-    background-color: inherit;
-}
-
-.uranus{
-    background-color: inherit;
-}
-
-.neptune{
-    background-color: inherit;
-}
-#iss-orbit{
-    -webkit-animation: orbit 40s linear infinite;
-    -moz-animation: orbit 40s linear infinite;
-    -ms-animation: orbit 40s linear infinite;
-    -o-animation: orbit 40s linear infinite;
-    animation: orbit 40s linear infinite;
-}
-
