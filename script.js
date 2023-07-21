@@ -7,19 +7,21 @@ function toggleAccordion(sectionNumber) {
     content.style.display = "block";
   }
 }
-// code pour résoudre les problèmes des boutons, pas encore validé
 
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
   const infos = await response.json();
   const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
 
   container.innerHTML = "";
 
-  container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
-  container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
-  container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
-  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
+    container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
+    container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
+    container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  }
 }
 
 // vérifier dans le else if si on appui sur le même bouton
@@ -31,22 +33,28 @@ async function moonInfo(moonName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
   const infos = await response.json();
   const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
 
   container.innerHTML = "";
 
-  container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
-  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
+    container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  }
 }
 
 async function starInfo(starName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${starName}`);
   const infos = await response.json();
   const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
 
   container.innerHTML = "";
 
-  container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
-  container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
+    container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
+  }
 }
 
 // FONCTION CONCERNANT L'ISS ------------------
