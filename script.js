@@ -16,8 +16,9 @@ function toggleAccordion(sectionNumber) {
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
   const infos = await response.json();
+  console.log('Infos fetchée : ', infos)
+  console.log('Infos déjà affichée ? ', texteAfficher)
   if (texteAfficher == false) {
-      console.log(infos);
     // document.querySelector("#informations")
     let container = document.getElementById("informations");
     container.innerHTML = "";
@@ -27,26 +28,26 @@ async function planetInfo(planetName) {
     container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher = true
-  } else if(texteAfficher) {
-      if(texteAfficher = false){
-        const dropdownButton = document.getElementById("dropdownButton");
-        const options = dropdownButton.getElementsByTagName("option");
+  } else if (texteAfficher) {
+    if (texteAfficher = false) {
+      const dropdownButton = document.getElementById("dropdownButton");
+      const options = dropdownButton.getElementsByTagName("option");
 
-        // Utiliser forEach pour itérer sur les options
-        Array.from(options).forEach(function(option) {
-          // Ajouter un gestionnaire d'événements "click" à chaque option
-        option.addEventListener("click", function() {
-        const selectedOption = option.value; // Valeur de l'option sélectionnée
-             var container = document.getElementById("informations");
-             container.innerHTML = "";
-            //  Faire quelque chose avec l'option sélectionnée
-            //  console.log("Option sélectionnée :", selectedOption);
-           });
-         });
-       } else {
-        var container = document.getElementById("informations");
-        container.innerHTML = "";
-      }
+      // Utiliser forEach pour itérer sur les options
+      Array.from(options).forEach(function (option) {
+        // Ajouter un gestionnaire d'événements "click" à chaque option
+        option.addEventListener("click", function () {
+          const selectedOption = option.value; // Valeur de l'option sélectionnée
+          var container = document.getElementById("informations");
+          container.innerHTML = "";
+          //  Faire quelque chose avec l'option sélectionnée
+          //  console.log("Option sélectionnée :", selectedOption);
+        });
+      });
+    } else {
+      var container = document.getElementById("informations");
+      container.innerHTML = "";
+    }
   }
   // console.log(texteAfficher)
 }
@@ -83,7 +84,7 @@ async function starInfo(starName) {
     container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
     texteAfficher2 = true;
-  } else if(texteAfficher2) {
+  } else if (texteAfficher2) {
     texteAfficher2 = false;
     let container = document.getElementById("informations");
     container.innerHTML = "";
