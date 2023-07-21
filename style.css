@@ -19,13 +19,26 @@ p {
     font-family: 'Montserrat', arial, sans-serif;
 }
 
+#left-block {
+    margin-top: -30%;
+}
+
+#right-block {
+    margin-top: 5%;
+}
+
 #informations {
-    margin-top: -18%;
+    margin-top: -17%;
     margin-left: 10%;
 }
 
 #info-iss {
-    margin-top: -15%;
+    margin-top: -18%;
+    margin-left: 78%;
+}
+
+#position-iss {
+    margin-top: 2%;
     margin-left: 78%;
 }
 
@@ -55,38 +68,13 @@ body {
 
 #boutons {
     position: relative;
-    margin-top: -11%;
+    margin-top: -20%;
     zoom: 120%;
 }
-#butSun {
+
+#boutons button {
     border: none;
-}
-#butMercure {
-    border: none;
-}
-#butVenus {
-    border: none;
-}
-#butTerre {
-    border: none;
-}
-#butLune {
-    border: none;
-}
-#butMars {
-    border: none;
-}
-#butJupiter {
-    border: none;
-}
-#butSaturne {
-    border: none;
-}
-#butUranus {
-    border: none;
-}
-#butNeptune {
-    border: none;
+    background-color: inherit;
 }
 
 #sun {
@@ -481,55 +469,23 @@ body {
     -o-animation: orbit 26s linear infinite;
     animation: orbit 26s linear infinite;
 }
-
-.sun{
-    background-color: inherit;
-}
-
-.mercury{
-    background-color: inherit;
-}
-
-.venus{
-    background-color: inherit;
-}
-
-.earth{
-    background-color: inherit;
-}
-
-.moon{
-    background-color: inherit;
-}
-
-.mars{
-    background-color: inherit;
-}
-
-.jupiter{
-    background-color: inherit;
-}
-
-.saturn{
-    background-color: inherit;
-}
-
-.uranus{
-    background-color: inherit;
-}
-
-.neptune{
-    background-color: inherit;
-}
 #iss-orbit{
-    -webkit-animation: orbit 40s linear infinite;
-    -moz-animation: orbit 40s linear infinite;
-    -ms-animation: orbit 40s linear infinite;
-    -o-animation: orbit 40s linear infinite;
-    animation: orbit 40s linear infinite;
+    -webkit-animation: orbit 20s linear infinite;
+    -moz-animation: orbit 20s linear infinite;
+    -ms-animation: orbit 20s linear infinite;
+    -o-animation: orbit 20s linear infinite;
+    animation: orbit 20s linear infinite;
 }
 
+#terre {
+    -webkit-animation: orbit 140s linear infinite;
+    -moz-animation: orbit 140s linear infinite;
+    -ms-animation: orbit 140s linear infinite;
+    -o-animation: orbit 140s linear infinite;
+    animation: orbit 140s linear infinite;
+}
 
+/* code pour résoudre les problèmes des boutons, pas encore validé */
 .accordion-header {
   cursor: pointer;
   background-color: #f1f1f1;
@@ -545,3 +501,4 @@ body {
 .accordion-item {
   margin-bottom: 10px;
 }
+/* code pour résoudre les problèmes des boutons, pas encore validé */
