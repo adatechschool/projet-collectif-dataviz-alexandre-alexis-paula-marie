@@ -19,13 +19,21 @@ p {
     font-family: 'Montserrat', arial, sans-serif;
 }
 
+#left-block {
+    margin-top: -30%;
+}
+
+#right-block {
+    margin-top: 5%;
+}
+
 #informations {
-    margin-top: -20%;
+    margin-top: -17%;
     margin-left: 10%;
 }
 
 #info-iss {
-    margin-top: -15%;
+    margin-top: -18%;
     margin-left: 78%;
 }
 
@@ -60,7 +68,7 @@ body {
 
 #boutons {
     position: relative;
-    margin-top: -15%;
+    margin-top: -20%;
     zoom: 120%;
 }
 #butSun {
