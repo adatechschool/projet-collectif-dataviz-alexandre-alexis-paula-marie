@@ -6,8 +6,7 @@
         <link rel="stylesheet" href="style.css" type="text/css" media="screen">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
         <style>
             #maCarte {
                 height: 400px;
@@ -56,8 +55,6 @@
             <img src="images/soleil1.png"  id="sun" alt="sun" title="Soleil">
         </div>
 
-        <script src="script.js"></script>
-
         <img src="images/space.jpg" id="space" alt="space">
 
         <div id="right-block">
@@ -69,23 +66,6 @@
             </div>
             <div id="maCarte"></div>
         </div>
-
-        <!-- code pour résoudre les problèmes des boutons, pas encore validé -->
-        <div class="accordion">
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAccordion(0)">Section 1</div>
-            <div class="accordion-content">Content for Section 1</div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAccordion(1)">Section 2</div>
-            <div class="accordion-content">Content for Section 2</div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAccordion(2)">Section 3</div>
-            <div class="accordion-content">Content for Section 3</div>
-          </div>
-        </div>
-        <!-- code pour résoudre les problèmes des boutons, pas encore validé -->
 
         <div id="left-block">
             <div id ="boutons">
@@ -116,6 +96,8 @@
                 maxZoom: 1,
             }).addTo(map);
         </script>
+
+        <script src="script.js"></script>
 
     </body>
 </html>

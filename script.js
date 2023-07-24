@@ -1,13 +1,3 @@
-// code pour résoudre les problèmes des boutons, pas encore validé
-function toggleAccordion(sectionNumber) {
-  var content = document.querySelector("boutons");
-  if (content.style.display === "block") {
-    content.style.display = "none";
-  } else {
-    content.style.display = "block";
-  }
-}
-
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
   const infos = await response.json();
@@ -23,11 +13,6 @@ async function planetInfo(planetName) {
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
   }
 }
-
-// vérifier dans le else if si on appui sur le même bouton
-// si on appuie sur le même, alors on ne supprime pas/on ne ferme pas ke bouton
-// sinon on supprime les infos/ferme le bouton
-
 
 async function moonInfo(moonName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
