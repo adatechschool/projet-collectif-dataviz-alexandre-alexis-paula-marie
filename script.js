@@ -69,7 +69,4 @@ const position = async function issInfo() {
   let marker = L.marker([latitude, longitude]).addTo(map);
   console.log(marker)
 }
-
-issInfo()
-
 position();
