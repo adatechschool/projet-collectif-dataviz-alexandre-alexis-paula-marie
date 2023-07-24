@@ -75,6 +75,15 @@ body {
 #boutons button {
     border: none;
     background-color: inherit;
+    cursor: pointer;
+    transition: 0.2s
+}
+
+#boutons button img:hover {
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px 
 }
 
 #sun {
