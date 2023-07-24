@@ -1,3 +1,80 @@
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 95px;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+
 body {
     background-image: url("images/satellites/background.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#spoutnik1 {
+    margin-left: 200px;
+    margin-top: -20px;
+    width: 100px; /* modifie la taille de la <div> (pas de l'image car on utilise l'ID de la div) dans ce cas présent */
+    transition: 0,4s;
+}
+
+#hubble {
+    margin-left: 370px;
+    margin-top: 30px;
+    width: 120px;
+    transition: 0,4s;
+}
+
+#iss {
+    margin-left: 500px;
+    margin-top: 25px;
+    width: 120px;
+    transition: 0,4s;
+}
+
+#planck {
+    margin-left: 650px;
+    margin-top: 40px;
+    width: 120px;
+    transition: 0,4s;
+}
+
+#jamesWebb {
+    margin-left: 830px;
+    margin-top: 30px;
+    width: 120px;
+    transition: 0,4s;
+}
+
+#spoutnik1:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#hubble:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#iss:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#planck:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#jamesWebb:hover {
+    padding-left: 15px;
+    cursor: pointer;
 }
