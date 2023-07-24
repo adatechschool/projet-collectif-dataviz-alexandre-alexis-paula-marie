@@ -1,38 +1,27 @@
-let texteAfficher = false
-let texteAfficher2 = false
-let texteAfficher3 = false
+// code pour résoudre les problèmes des boutons, pas encore validé
+function toggleAccordion(sectionNumber) {
+  var content = document.querySelector("boutons");
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
+  }
+}
 
 async function planetInfo(planetName) {
   const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${planetName}`);
   const infos = await response.json();
-  if (texteAfficher == false) {
-      console.log(infos);
-    // document.querySelector("#informations")
-    let container = document.getElementById("informations");
-    container.innerHTML = "";
-    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
+  const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
+
+  container.innerHTML = "";
+
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
     container.innerHTML += `<p>Année: ${infos.sideralOrbit} jours</p>`;
     container.innerHTML += `<p>Jour: ${infos.sideralRotation} heures</p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
-    texteAfficher = true
-  } else if(texteAfficher) {
-    texteAfficher = false;
-    const dropdownButton = document.getElementById("dropdownButton");
-    const options = dropdownButton.getElementsByTagName("option");
-
-    // Utiliser forEach pour itérer sur les options
-    Array.from(options).forEach(function(option) {
-      // Ajouter un gestionnaire d'événements "click" à chaque option
-      option.addEventListener("click", function() {
-        const selectedOption = option.value; // Valeur de l'option sélectionnée
-        let container = document.getElementById("informations");
-        container.innerHTML = "";
-        // Faire quelque chose avec l'option sélectionnée
-        // console.log("Option sélectionnée :", selectedOption);
-      });
-    });
   }
-  // console.log(texteAfficher)
 }
 
 // vérifier dans le else if si on appui sur le même bouton
@@ -41,36 +30,30 @@ async function planetInfo(planetName) {
 
 
 async function moonInfo(moonName) {
-  if (texteAfficher3 == false) {
-    const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
-    const infos = await response.json();
-    let container = document.getElementById("informations");
-    container.innerHTML = "";
-    // console.log(infos);
-    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
+  const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${moonName}`);
+  const infos = await response.json();
+  const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
+
+  container.innerHTML = "";
+
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
-    texteAfficher3 = true
-  } else if (texteAfficher3) {
-    texteAfficher3 = false;
-    let container = document.getElementById("informations");
-    container.innerHTML = "";
   }
 }
 
 async function starInfo(starName) {
-  if (texteAfficher2 == false) {
-    const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${starName}`);
-    const infos = await response.json();
-    let container = document.getElementById("informations");
-    container.innerHTML = "";
-    // console.log(infos);
-    container.innerHTML += `<p><strong>${infos.name}</strong></p>`;
+  const response = await fetch(`https://api.le-systeme-solaire.net/rest/bodies/${starName}`);
+  const infos = await response.json();
+  const container = document.getElementById("informations");
+  const actualPlanetName = document.getElementById("name");
+
+  container.innerHTML = "";
+
+  if (!actualPlanetName || actualPlanetName.innerHTML !== infos.name) {
+    container.innerHTML += `<p><strong id="name">${infos.name}</strong></p>`;
     container.innerHTML += `<p>Rayon: ${infos.equaRadius} km</p>`;
-    texteAfficher2 = true;
-  } else if(texteAfficher2) {
-    texteAfficher2 = false;
-    let container = document.getElementById("informations");
-    container.innerHTML = "";
   }
 }
 
@@ -87,4 +70,3 @@ const position = async function issInfo() {
   console.log(marker)
 }
 position();
-
