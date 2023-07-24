@@ -17,9 +17,14 @@ Nous présentons le système Solaire ainsi qu'une carte représentant la positio
 * CSS    
 
 ## Ressources utilisées    
-* l’API : le-systeme-solaire.net    
-* l’API : open-notify.org/astros.json     
-* l’API : openstreetmap.fr    
+les API suivantes :     
+* https://api.le-systeme-solaire.net    
+* https://fabdev.fr/articles/iss-python/    
+* https://www.openstreetmap.fr     
+        
+Une librairie :  
+* https://leafletjs.com/       
+
 
 ![Alt A la découverte du Système Solaire](images/Le-Système-Solaire.png)                
 
