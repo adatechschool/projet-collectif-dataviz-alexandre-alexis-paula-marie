@@ -22,7 +22,7 @@ les API suivantes :
 * https://fabdev.fr/articles/iss-python/    
 * https://www.openstreetmap.fr     
         
-Une librairie    
+Une librairie :  
 * https://leafletjs.com/       
 
 
