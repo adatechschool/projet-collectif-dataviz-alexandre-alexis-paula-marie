@@ -13,6 +13,45 @@ h1 {
     0 0 54px rgba(30,132,242,0.92);
 }
 
+.container {
+    display: flex
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white
+}
+
+li {
+    float: left;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 230%;
+    font-weight: 900;
+    color: white;
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+#s-a a::after {
+    color: white;
+    content: '|';
+}
+
+.sat {
+    display: block;
+    align-items: center;
+}
+
+#logo-sat {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    padding: 0.5em
+}
+
 p {
     color: white;
     font-size: xx-large;
@@ -147,7 +186,7 @@ body {
     margin-top: -230px;
     margin-left: -230px;
 
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #earth {
@@ -159,7 +198,7 @@ body {
 
 /* Arrondie l'orbite */
 #earth-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -191,7 +230,7 @@ body {
     margin-top: -230px;
     margin-left: -230px;
 
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #venus {
@@ -202,7 +241,7 @@ body {
 }
 
 #venus-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -218,7 +257,7 @@ body {
 
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #mercury {
@@ -229,7 +268,7 @@ body {
 }
 
 #mercury-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -245,7 +284,7 @@ body {
 
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #mars {
@@ -256,7 +295,7 @@ body {
 }
 
 #mars-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -272,7 +311,7 @@ body {
 
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #jupiter {
@@ -283,7 +322,7 @@ body {
 }
 
 #jupiter-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -299,7 +338,7 @@ body {
 
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 
 #saturn {
@@ -310,7 +349,7 @@ body {
 }
 
 #saturn-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -323,7 +362,7 @@ body {
     height: 1100px;
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 #uranus {
     position: absolute;
@@ -332,7 +371,7 @@ body {
     margin-top: -15px;
 }
 #uranus-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -345,7 +384,7 @@ body {
     height: 1300px;
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 #neptune {
     position: absolute;
@@ -354,7 +393,7 @@ body {
     margin-top: -15px;
 }
 #neptune-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
@@ -372,7 +411,7 @@ body {
     height: 600px;
     margin-top: -140px;
     margin-left: -140px;
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
 }
 #iss {
     position: absolute;
@@ -381,7 +420,7 @@ body {
     margin-top: -15px;
 }
 #iss-orbit {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #939393;
     -mozborder-radius: 50%;
     -webkitborder-radius: 50%;
     border-radius: 50%;
