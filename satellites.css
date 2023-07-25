@@ -13,6 +13,12 @@ h1 {
     0 0 54px rgba(30,132,242,0.92);
 }
 
+ul {
+    font-family: 'Montserrat', arial, sans-serif;
+    color: white;
+    position: absolute;
+}
+
 body {
     background-image: url("images/satellites/background.jpg");
     background-repeat: no-repeat;
@@ -26,11 +32,32 @@ body {
     transition: 0,4s;
 }
 
+#spoutnikStory { 
+    margin-left: 600px; 
+    margin-top: -20px;
+    display: none;
+}
+
+#spoutnik1:hover #spoutnikStory{ 
+    display: block;
+}
+
+
 #hubble {
     margin-left: 370px;
     margin-top: 30px;
     width: 120px;
     transition: 0,4s;
+}
+
+#hubbleStory {
+    margin-left: 430px;
+    margin-top: -150px;
+    display: none;
+}
+
+#hubble:hover #hubbleStory{ 
+    display: block;
 }
 
 #iss {
@@ -40,11 +67,31 @@ body {
     transition: 0,4s;
 }
 
+#issStory {
+    margin-left:300px;
+    margin-top: -235px;
+    display: none;
+}
+
+#iss:hover #issStory{ 
+    display: block;
+}
+
 #planck {
     margin-left: 650px;
-    margin-top: 40px;
+    margin-top: 10px;
     width: 120px;
     transition: 0,4s;
+}
+
+#planckStory {
+    margin-left: 150px;
+    margin-top: -330px;
+    display: none;
+}
+
+#planck:hover #planckStory{ 
+    display: block;
 }
 
 #jamesWebb {
@@ -53,6 +100,18 @@ body {
     width: 120px;
     transition: 0,4s;
 }
+
+#jameswebbStory {
+    margin-left: -30px;
+    margin-top: -450px;
+    display: none;
+}
+
+#jamesWebb:hover #jameswebbStory { 
+    display: block;
+}
+
+/* ---------------- */
 
 #spoutnik1:hover {
     padding-left: 15px;
