@@ -29,17 +29,18 @@ body {
     margin-left: 200px;
     margin-top: -20px;
     width: 100px; /* modifie la taille de la <div> (pas de l'image car on utilise l'ID de la div) dans ce cas présent */
-    transition: 0,4s;
+    transition: 0.4s;
 }
 
 #spoutnikStory { 
     margin-left: 600px; 
     margin-top: -20px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #spoutnik1:hover #spoutnikStory{ 
-    display: block;
+    opacity: 1;
 }
 
 
@@ -47,68 +48,72 @@ body {
     margin-left: 370px;
     margin-top: 30px;
     width: 120px;
-    transition: 0,4s;
+    transition: 0.4s;
 }
 
 #hubbleStory {
     margin-left: 430px;
     margin-top: -150px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #hubble:hover #hubbleStory{ 
-    display: block;
+    opacity: 1;
 }
 
 #iss {
     margin-left: 500px;
     margin-top: 25px;
     width: 120px;
-    transition: 0,4s;
+    transition: 0.4s;
 }
 
 #issStory {
     margin-left:300px;
     margin-top: -235px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #iss:hover #issStory{ 
-    display: block;
+    opacity: 1;
 }
 
 #planck {
     margin-left: 650px;
     margin-top: 10px;
     width: 120px;
-    transition: 0,4s;
+    transition: 0.4s;
 }
 
 #planckStory {
     margin-left: 150px;
     margin-top: -330px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #planck:hover #planckStory{ 
-    display: block;
+    opacity: 1;
 }
 
 #jamesWebb {
     margin-left: 830px;
     margin-top: 30px;
     width: 120px;
-    transition: 0,4s;
+    transition: 0.4s;
 }
 
 #jameswebbStory {
     margin-left: -30px;
     margin-top: -450px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #jamesWebb:hover #jameswebbStory { 
-    display: block;
+    opacity: 1;
 }
 
 /* ---------------- */
