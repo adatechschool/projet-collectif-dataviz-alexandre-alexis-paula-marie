@@ -46,6 +46,34 @@ a:link {
     content: '|';
 }
 
+#s-a {
+    transition: 0.4s;
+}
+
+#s-a:hover {
+    text-shadow: 
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+
+#a-p {
+    transition: 0.4s;
+}
+
+#a-p:hover {
+    text-shadow: 
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+
 #logo-sat {
     position: relative;
     width: 75px;
