@@ -1,0 +1,144 @@
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 95px;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+
+ul {
+    font-family: 'Montserrat', arial, sans-serif;
+    color: white;
+    position: absolute;
+}
+
+body {
+    background-image: url("images/satellites/background.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#spoutnik1 {
+    margin-left: 200px;
+    margin-top: -20px;
+    width: 100px; /* modifie la taille de la <div> (pas de l'image car on utilise l'ID de la div) dans ce cas présent */
+    transition: 0.4s;
+}
+
+#spoutnikStory { 
+    margin-left: 600px; 
+    margin-top: -20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#spoutnik1:hover #spoutnikStory{ 
+    opacity: 1;
+}
+
+
+#hubble {
+    margin-left: 370px;
+    margin-top: 30px;
+    width: 120px;
+    transition: 0.4s;
+}
+
+#hubbleStory {
+    margin-left: 430px;
+    margin-top: -150px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#hubble:hover #hubbleStory{ 
+    opacity: 1;
+}
+
+#iss {
+    margin-left: 500px;
+    margin-top: 25px;
+    width: 120px;
+    transition: 0.4s;
+}
+
+#issStory {
+    margin-left:300px;
+    margin-top: -235px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#iss:hover #issStory{ 
+    opacity: 1;
+}
+
+#planck {
+    margin-left: 650px;
+    margin-top: 10px;
+    width: 120px;
+    transition: 0.4s;
+}
+
+#planckStory {
+    margin-left: 150px;
+    margin-top: -330px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#planck:hover #planckStory{ 
+    opacity: 1;
+}
+
+#jamesWebb {
+    margin-left: 830px;
+    margin-top: 30px;
+    width: 120px;
+    transition: 0.4s;
+}
+
+#jameswebbStory {
+    margin-left: -30px;
+    margin-top: -450px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#jamesWebb:hover #jameswebbStory { 
+    opacity: 1;
+}
+
+/* ---------------- */
+
+#spoutnik1:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#hubble:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#iss:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#planck:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#jamesWebb:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
