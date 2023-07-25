@@ -13,10 +13,6 @@ h1 {
     0 0 54px rgba(30,132,242,0.92);
 }
 
-.container {
-    display: flex
-}
-
 a {
     text-decoration: none;
 }
@@ -25,14 +21,23 @@ a:link {
     color: white
 }
 
-li {
-    float: left;
+#menu li {
     font-family: 'Montserrat', arial, sans-serif;
     font-size: 230%;
-    font-weight: 900;
     color: white;
     list-style-type: none;
     padding: 0.5em;
+    align-items: baseline;
+    text-shadow:
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92)
+}
+
+#menu ol {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 #s-a a::after {
@@ -40,16 +45,12 @@ li {
     content: '|';
 }
 
-.sat {
-    display: block;
-    align-items: center;
-}
-
 #logo-sat {
     position: relative;
     width: 75px;
     height: 75px;
-    padding: 0.5em
+    padding: 0.5em;
+    margin-bottom: -45px;
 }
 
 p {
