@@ -403,8 +403,10 @@ body {
 }
 #terre { /* Terre avec l'ISS */
     position: absolute;
-    margin-left: 190%;
-    margin-top: -30%;
+    margin-left: 187%;
+    margin-top: -34%;
+    width: 350px;
+    height: 350px
 }
 #iss-orbit {
     position: absolute;
