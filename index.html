@@ -2,11 +2,12 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Solar system</title>
+        <title>Le système solaire</title>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <style>
             #maCarte {
                 height: 400px;
@@ -18,6 +19,12 @@
     </head>
     <body>
         <h1>- A la découverte du système solaire -</h1>
+        <nav id="menu">
+                <ol>
+                    <li id="s-a"><a href="satellites.html" target="blank"><strong>Satellites artificiels</strong><img src="images/logo-sat.png" id="logo-sat"></a></li>
+                    <li id="a-p"><a href="index3.html"><strong>A propos</strong></a></li>
+                </ol>
+        </nav>
         
         <div id="scene">
             <div id="earth-orbit">
@@ -56,7 +63,7 @@
             <img src="images/soleil1.png"  id="sun" alt="sun" title="Soleil">
         </div>
 
-        <img src="images/space.jpg" id="space" alt="space">
+        <img src="images/space4.jpg" id="space" alt="space">
 
         <div id="right-block">
             <div id="info-iss">
